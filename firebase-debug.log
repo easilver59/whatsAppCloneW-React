@@ -1,0 +1,94 @@
+[debug] [2021-02-22T22:22:38.789Z] ----------------------------------------------------------------------
+[debug] [2021-02-22T22:22:38.791Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2021-02-22T22:22:38.791Z] CLI Version:   9.4.0
+[debug] [2021-02-22T22:22:38.791Z] Platform:      darwin
+[debug] [2021-02-22T22:22:38.792Z] Node Version:  v14.15.0
+[debug] [2021-02-22T22:22:38.793Z] Time:          Mon Feb 22 2021 15:22:38 GMT-0700 (Mountain Standard Time)
+[debug] [2021-02-22T22:22:38.793Z] ----------------------------------------------------------------------
+[debug] [2021-02-22T22:22:38.793Z] 
+[debug] [2021-02-22T22:22:38.798Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-22T22:22:38.798Z] > authorizing via signed-in user
+[debug] [2021-02-22T22:22:38.798Z] [iam] checking project whats-app-clone-5278a for permissions ["firebase.projects.get","firebasedatabase.instances.update"]
+[debug] [2021-02-22T22:22:38.800Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/whats-app-clone-5278a:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update"]}
+[debug] [2021-02-22T22:22:39.024Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 22 Feb 2021 22:22:39 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=87","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-22T22:22:39.028Z] > refreshing access token with scopes: []
+[debug] [2021-02-22T22:22:39.029Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-22T22:22:39.169Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Mon, 22 Feb 2021 22:22:39 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-22T22:22:39.203Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/whats-app-clone-5278a [none]
+[debug] [2021-02-22T22:22:39.380Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/whats-app-clone-5278a 200
+[debug] [2021-02-22T22:22:39.381Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/whats-app-clone-5278a {"projectId":"whats-app-clone-5278a","projectNumber":"641675058991","displayName":"Whats APP Clone","name":"projects/whats-app-clone-5278a","resources":{"hostingSite":"whats-app-clone-5278a","realtimeDatabaseInstance":"whats-app-clone-5278a-default-rtdb","storageBucket":"whats-app-clone-5278a.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'whats-app-clone-5278a'...
+[info] 
+[info] i  deploying database 
+[info] i  database: checking rules syntax... 
+[debug] [2021-02-22T22:22:39.385Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-02-22T22:22:39.386Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-22T22:22:39.528Z] <<< HTTP RESPONSE 200 {"date":"Mon, 22 Feb 2021 22:22:39 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-22T22:22:39.543Z] >>> HTTP REQUEST GET https://firebasedatabase.googleapis.com/v1beta/projects/whats-app-clone-5278a/locations/-/instances/whats-app-clone-5278a-default-rtdb  
+ 
+[debug] [2021-02-22T22:22:39.795Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 22 Feb 2021 22:22:39 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-22T22:22:39.796Z] >>> HTTP REQUEST PUT https://whats-app-clone-5278a-default-rtdb.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    ".read": "now < 1616565600000",  // 2021-3-24
+    ".write": "now < 1616565600000",  // 2021-3-24
+  }
+}
+[debug] [2021-02-22T22:22:39.978Z] <<< HTTP RESPONSE 423 {"server":"nginx","date":"Mon, 22 Feb 2021 22:22:40 GMT","content-type":"application/json; charset=utf-8","content-length":"116","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[debug] [2021-02-22T22:22:39.979Z] <<< HTTP RESPONSE BODY {
+  "error" : "The Firebase database 'whats-app-clone-5278a-default-rtdb' has been disabled by a database owner."
+}
+
+[error] 
+[error] Error: Unexpected error while deploying database rules.
+[debug] [2021-02-22T22:26:23.130Z] ----------------------------------------------------------------------
+[debug] [2021-02-22T22:26:23.132Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2021-02-22T22:26:23.132Z] CLI Version:   9.4.0
+[debug] [2021-02-22T22:26:23.132Z] Platform:      darwin
+[debug] [2021-02-22T22:26:23.132Z] Node Version:  v14.15.0
+[debug] [2021-02-22T22:26:23.134Z] Time:          Mon Feb 22 2021 15:26:23 GMT-0700 (Mountain Standard Time)
+[debug] [2021-02-22T22:26:23.134Z] ----------------------------------------------------------------------
+[debug] [2021-02-22T22:26:23.134Z] 
+[debug] [2021-02-22T22:26:23.142Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-22T22:26:23.143Z] > authorizing via signed-in user
+[debug] [2021-02-22T22:26:23.143Z] [iam] checking project whats-app-clone-5278a for permissions ["firebase.projects.get","firebasedatabase.instances.update"]
+[debug] [2021-02-22T22:26:23.146Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/whats-app-clone-5278a:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update"]}
+[debug] [2021-02-22T22:26:23.333Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 22 Feb 2021 22:26:23 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=87","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-22T22:26:23.335Z] > refreshing access token with scopes: []
+[debug] [2021-02-22T22:26:23.335Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-22T22:26:23.448Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 22 Feb 2021 22:26:23 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-22T22:26:23.477Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/whats-app-clone-5278a [none]
+[debug] [2021-02-22T22:26:23.623Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/whats-app-clone-5278a 200
+[debug] [2021-02-22T22:26:23.624Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/whats-app-clone-5278a {"projectId":"whats-app-clone-5278a","projectNumber":"641675058991","displayName":"Whats APP Clone","name":"projects/whats-app-clone-5278a","resources":{"hostingSite":"whats-app-clone-5278a","realtimeDatabaseInstance":"whats-app-clone-5278a-default-rtdb","storageBucket":"whats-app-clone-5278a.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'whats-app-clone-5278a'...
+[info] 
+[info] i  deploying database 
+[info] i  database: checking rules syntax... 
+[debug] [2021-02-22T22:26:23.627Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-02-22T22:26:23.627Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-22T22:26:23.736Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Mon, 22 Feb 2021 22:26:23 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-22T22:26:23.763Z] >>> HTTP REQUEST GET https://firebasedatabase.googleapis.com/v1beta/projects/whats-app-clone-5278a/locations/-/instances/whats-app-clone-5278a-default-rtdb  
+ 
+[debug] [2021-02-22T22:26:23.987Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 22 Feb 2021 22:26:24 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-22T22:26:23.989Z] >>> HTTP REQUEST PUT https://whats-app-clone-5278a-default-rtdb.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    ".read": "now < 1616565600000",  // 2021-3-24
+    ".write": "now < 1616565600000",  // 2021-3-24
+  }
+}
+[debug] [2021-02-22T22:26:24.178Z] <<< HTTP RESPONSE 423 {"server":"nginx","date":"Mon, 22 Feb 2021 22:26:24 GMT","content-type":"application/json; charset=utf-8","content-length":"116","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[debug] [2021-02-22T22:26:24.178Z] <<< HTTP RESPONSE BODY {
+  "error" : "The Firebase database 'whats-app-clone-5278a-default-rtdb' has been disabled by a database owner."
+}
+
+[error] 
+[error] Error: Unexpected error while deploying database rules.
